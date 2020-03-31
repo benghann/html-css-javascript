@@ -1,0 +1,63 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-title {
+    background-color: #bad2ea;
+    color: #3778b7;
+    padding: 3px 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-black {
+    color: black !important;
+}
+
+.text-purple {
+    color: purple !important;
+}
+
+table {
+    border-spacing: 0;
+}
+
+table thead th {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+table td, table th {
+    padding: 3px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+table th:last-child, table td:last-child {
+    border-right: 1px solid #000;
+}
+
+table td:first-child {
+    color: #3778b7;
+}
+
+table tr:nth-child(2n) td {
+    background-color: #eaeaea;
+}
+
+.text-blue {
+    color: #3778b7 !important;
+}
+
+#hci {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.comic-sans {
+    font-family: 'Comic Sans MS';
+}
