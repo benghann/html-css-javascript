@@ -1,10 +1,44 @@
+body {
+    background-color: #2c2c2c;
+    color: #fff;
+    line-height: 1.618;
+}
+
+body p {
+    color: #9f9f9f;
+}
+
+body > section:nth-child(2n+1) {
+    background-color: #303131;
+}
+
+body > section {
+    padding: 80px 0px;
+}
+
+.section-title {
+    color: #cccccc;
+    font-weight: 900;
+    font-size: 45px
+}
+
+.section-desc {
+    margin-bottom: 30px;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Home Banner */
+#home-banner {
+    padding: 0px;
+}
+
 #home-banner img {
     margin-top: 100px;
     width: 100%;
-}
-
-#home-banner {
-    color: #fff;
 }
 
 #home-banner h1 {
@@ -15,7 +49,48 @@
     font-size: 24px;
 }
 
+/* About Me */
 #about-me {
     color: #fff;
     padding: 100px 0px;
+}
+
+/* Services */
+#services .card {
+    background-color: #2387ed;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+#services .card p {
+    color: #fff;
+}
+
+/* Work Experiences */
+#work-experiences .card {
+    color: #747474;
+    background-color: #333;
+    border-color: #5a5a5a;
+    border-radius: 0;
+    padding: 30px;
+    border-left-width: 0;
+}
+
+#work-experiences .card h4 {
+    color: #fff;
+    font-weight: 600;
+}
+
+#work-experiences .card p {
+    margin-top: 15px;
+}
+
+#work-experiences .row > div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#work-experiences .row > div:first-child .card {
+    border-left-width: 1px;
 }
