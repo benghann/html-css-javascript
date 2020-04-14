@@ -16,10 +16,59 @@ body > section {
     padding: 80px 0px;
 }
 
+.navbar .nav-link {
+    position: relative;
+}
+
+.navbar .nav-item.active .nav-link {
+    color: #fab634;
+}
+
+.navbar .nav-item.active .nav-link:after {
+    width: 25px;
+}
+
+.navbar .nav-link {
+    transition: color 0.5s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #fab634;
+}
+
+.navbar .nav-link:hover:after {
+    width: 25px;
+}
+
+.navbar .nav-link:after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 1rem;
+    width: 0px;
+    height: 2px;
+    background-color: #fab634;
+    transition: width 0.5s ease;
+}
+
 .section-title {
     color: #cccccc;
     font-weight: 900;
-    font-size: 45px
+    font-size: 45px;
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 5px;
+    width: 100px;
+    background-color: #fab634;
+    transform: translateX(-50%);
 }
 
 .section-desc {
@@ -94,3 +143,26 @@ body > section {
 #work-experiences .row > div:first-child .card {
     border-left-width: 1px;
 }
+
+#cta .section-title:after{
+    background-color: #fff;
+}
+
+#contact-me form label {
+    color: #777777;
+    text-transform: uppercase;
+}
+
+#contact-me form .form-control {
+    background-color: #363737;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #777777;
+    padding: 25px;
+}
+
+#contact-me form .form-group {
+    margin-bottom: 30px;
+}
+

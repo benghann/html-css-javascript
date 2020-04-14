@@ -30,8 +30,6 @@
         </div>
     </nav>
 
-    <a href="" class="foo"></a>
-
     <section id="home-banner">
         <div class="container">
             <div class="row">
@@ -128,16 +126,7 @@
 
 
             <div class="row">
-                <div>
-                    <div>Hello</div>
-                </div>
-                <div>
-                    <div>Hello</div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-3">
+                <div class="col-4">
                     <div class="card">
                         <span>JUNE 2012 - 2016</span>
                         <h4>Graphic Designer</h4>
@@ -146,7 +135,7 @@
                     </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-4">
                     <div class="card">
                         <span>JUNE 2012 - 2016</span>
                         <h4>Graphic Designer</h4>
@@ -155,16 +144,7 @@
                     </div>
                 </div>
 
-                <div class="col-3">
-                    <div class="card">
-                        <span>JUNE 2012 - 2016</span>
-                        <h4>Graphic Designer</h4>
-                        <span>Adobe Inc.</span>
-                        <p>Lorem ipsum dolor sit amet, coectetur adipisicing elit, sed do eiusmod temp incididunt ut labore.</p>
-                    </div>
-                </div>
-
-                <div class="col-3">
+                <div class="col-4">
                     <div class="card">
                         <span>JUNE 2012 - 2016</span>
                         <h4>Graphic Designer</h4>
@@ -180,7 +160,7 @@
         <div class="container">
             <div class="text-center">
                 <h3 class="section-title">Have Any Project In Mind?</h3>
-                <button class="btn btn-outline-warning">Hire Me</button>
+                <button class="btn btn-light">Hire Me</button>
             </div>
         </div>
     </section>
@@ -193,12 +173,38 @@
 
             <div class="row">
                 <div class="col-4"></div>
+
                 <div class="col-8">
                     <form action="">
                         <div class="form-group">
-                            <label for="exampleFormControlInput1">Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                            <label for="name-input">Name</label>
+                            <input type="text" class="form-control" id="name-input" name="name" placeholder="Type your name">
                         </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="phone-input">Phone Number</label>
+                                    <input type="text" class="form-control" id="phone-input" name="phone_number" placeholder="Type your phone number">
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="email-input">Email</label>
+                                    <input type="email" class="form-control" id="email-input" name="email" placeholder="Type your email">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message-input">Your Message</label>
+                            <textarea class="form-control" id="message-input" name="message" placeholder="Type your message here" rows="5"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-warning">
+                            Send Message
+                        </button>
                     </form>
                 </div>
             </div>
