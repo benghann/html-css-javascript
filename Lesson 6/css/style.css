@@ -123,7 +123,8 @@ body > section {
     border-color: #5a5a5a;
     border-radius: 0;
     padding: 30px;
-    border-left-width: 0;
+    border-left-width: 1px;
+    margin-bottom: 15px;
 }
 
 #work-experiences .card h4 {
@@ -166,3 +167,30 @@ body > section {
     margin-bottom: 30px;
 }
 
+#latest-works img {
+    width: 100%;
+}
+
+#latest-works .work-card {
+    margin-bottom: 30px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) { ... } */
+
+/* md => Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #work-experiences .card {
+        border-left-width: 0px;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) { ... } */
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { ... } */
