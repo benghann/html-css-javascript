@@ -1,3 +1,7 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
     background-color: #2c2c2c;
     color: #fff;
@@ -92,6 +96,7 @@ body > section {
 
 #home-banner h1 {
     font-size: 64px;
+    font-weight: 600;
 }
 
 #home-banner p {
@@ -165,6 +170,26 @@ body > section {
 
 #contact-me form .form-group {
     margin-bottom: 30px;
+}
+
+#contact-me .contact-info .contact-desc {
+    display: flex;
+}
+
+#contact-me .contact-info .contact-desc span {
+    color: #9f9f9f;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#contact-me .follow-me a {
+    color: #9f9f9f;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#contact-me .icon {
+    color: #9f9f9f;
 }
 
 #latest-works img {
