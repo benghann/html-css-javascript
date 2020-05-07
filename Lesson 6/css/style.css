@@ -172,24 +172,50 @@ body > section {
     margin-bottom: 30px;
 }
 
-#contact-me .contact-info .contact-desc {
+#contact-me .contact-info a,
+#contact-me .follow-me a {
+    color: #9f9f9f;
+    transition: color .5s ease;
+    line-height: 1.618;
+}
+
+#contact-me .contact-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#contact-me .contact-info ul li {
+    margin-bottom: 30px;
+}
+
+#contact-me .contact-info ul a {
     display: flex;
 }
 
-#contact-me .contact-info .contact-desc span {
-    color: #9f9f9f;
-    display: inline-block;
-    padding-right: 10px;
+#contact-me .contact-info ul a i {
+    padding-right: 5px;
+}
+
+#contact-me .contact-info a:hover,
+#contact-me .follow-me a:hover {
+    color: #fab634;
+    text-decoration: none;
+}
+
+#contact-me .contact-info a:focus,
+#contact-me .follow-me a:focus {
+    outline: none;
+}
+
+#contact-me .follow-me .follow-me-icons {
+    display: flex;
+    margin-left: -5px;
 }
 
 #contact-me .follow-me a {
     color: #9f9f9f;
     padding-left: 5px;
     padding-right: 5px;
-}
-
-#contact-me .icon {
-    color: #9f9f9f;
 }
 
 #latest-works img {
@@ -200,6 +226,51 @@ body > section {
     margin-bottom: 30px;
 }
 
+#footer {
+    text-align: center;
+}
+
+#footer .social-media-cta {
+    padding: 60px 15px;
+}
+
+#footer .social-media-cta img {
+    width: 50px;
+    height: auto;
+}
+
+#footer .social-media-cta p {
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+#footer .social-media-icons {
+    display: flex;
+    justify-content: center;
+}
+
+#footer .social-media-icons a {
+    align-items: center;
+    background: #111;
+    border-radius: 100%;
+    color: #fff;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin: 0px 3px;
+    text-decoration: none;
+    transition: background-color .5s ease;
+    width: 40px;
+}
+
+#footer .social-media-icons a:hover {
+    background-color: #fab634;
+}
+
+#footer .copyright {
+    padding: 15px;
+    border-top: 1px solid #666;
+}
 /* Extra small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 
