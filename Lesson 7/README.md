@@ -13,6 +13,7 @@
 - Underscore: eg. `first_name`, `last_name`
 - Upper Camel Case (Pascal Case): eg. `FirstName`, `LastName`
 - Lower Camel Case: eg. `firstName`, `lastName`
+- Camel Case: `firstName`
 
 ## What's JavaScript
 - *Case Sensitive* (Recommended to use camel case)
@@ -42,7 +43,7 @@
 - In HTML, the code need to put inside `<script></script>`
 - Support external reference `<script src="/js/script.js"></script>`
 
-### External JavaScript
+### Benefit of having external JavaScript
 - Separates from HTML
 - Easier to read & maintain
 - Cached JavaScript files can speed up page loads
@@ -68,7 +69,7 @@ function myFunction() {
 | `++` | Increment |
 | `--` | Decrement |
 
-### Comparison Operators
+### Assignment Operators
 | Operator | Example | Same As |
 | --- | --- | --- |
 | = | x = y | x = y |
@@ -79,7 +80,7 @@ function myFunction() {
 | %= | x %= y | x = x % y |
 | **= | x **= y | x = x ** y |
 
-### String Operators
+### Comparison Operators
 | Operator | Description |
 | --- | --- |
 | == | equal to |
@@ -98,6 +99,20 @@ function myFunction() {
 | && | logical and |
 | \|\| | logical or |
 | ! | logical not |
+
+| Comparison | x | y | Result |
+| --- | --- | --- | --- |
+| OR | false | false | x \|\| y == false | 
+| OR | true | false | x \|\| y == true |
+| OR | false | true | x \|\| y == true |
+| OR | true | true | x \|\| y == true |
+| AND | false | false | x && y == false |
+| AND | true | false | x && y == false |
+| AND | false | true | x && y == false |
+| AND | true | true | x && y == true |
+| NOT | true | - | !x == false |
+| NOT | false | - | !x == true |
+
 
 ### Type Operators 
 | Operator | Description |
