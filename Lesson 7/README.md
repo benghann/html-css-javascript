@@ -157,6 +157,7 @@ var z = 6;
 - Written with square brackets `[]`
 - Separated by commas `,`
 - `var cars = ["Saab", "Volvo", "BMW"];`
+- `var numbers = [0, 3, 7];`
 
 ### Objects
 - Written with curly braces `{}`
