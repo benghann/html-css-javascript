@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 10 - JavaScript Tutorial</title>
+
+    <style>
+        body {
+            font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+            margin: 30px;
+        }
+        p {
+            margin: 0;
+        }
+        .card {
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+            display: inline-block;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            width: 450px;
+        }
+        .card-title {
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 15px;
+        }
+        .card-title h3 {
+            font-size: 16px;
+            margin: 0;
+        }
+        .card-body {
+            background-color: #eee;
+            padding: 15px;
+        }
+        .card-body label {
+            display: block;
+            font-weight: 600;
+        }
+        .tutorial .form {
+            margin-bottom: 15px;
+        }
+        .tutorial .form-input {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="tutorial-1" class="tutorial card">
+        <div class="card-title">
+            <h3>1. Write a JavaScript program to find the area of a triangle based on the height & base given from user input.</h3>
+        </div>
+
+        <div class="card-body">
+            <form class="form" action="">
+                <div class="form-input">
+                    <label for="tutorial-1-input-1">Height:</label>
+                    <input type="number" id="tutorial-1-input-1">
+                </div>
+    
+                <div class="form-input">
+                    <label for="tutorial-1-input-2">Base:</label>
+                    <input type="number" id="tutorial-1-input-2">
+                </div>
+
+                <button type="button" id="tutorial-1-calculate" onclick="calculateTriangle()">Calculate</button>
+            </form>
+
+            <hr>
+    
+            <label for="">Result:</label>
+            <p id="tutorial-1-result" class="result">0</p>
+        </div>
+    </div>
+
+    <div id="tutorial-2" class="tutorial card">
+        <div class="card-title">
+            <h3>2. Write a JavaScript program to calculate multiplication and division of two numbers</h3>
+        </div>
+
+        <div class="card-body">
+            <form class="form" action="">
+                <div class="form-input">
+                    <label for="tutorial-2-input-1">1st Number:</label>
+                    <input type="number" id="tutorial-2-input-1">
+                </div>
+    
+                <div class="form-input">
+                    <label for="tutorial-2-input-2">2nd Number:</label>
+                    <input type="number" id="tutorial-2-input-2">
+                </div>
+
+                <button type="button" id="tutorial-2-multiply" onclick="calculate('multiply')">Multiply</button>
+                <button type="button" id="tutorial-2-divide" onclick="calculate('divide')">Divide</button>
+            </form>
+
+            <hr>
+    
+            <label for="">Result:</label>
+            <p id="tutorial-2-result" class="result">0</p>
+        </div>
+    </div>
+
+    <div id="tutorial-3" class="tutorial card">
+        <div class="card-title">
+            <h3>3. Write a JavaScript program to compute the sum of the two given integers. If the two values are same, then returns triple their sum.</h3>
+        </div>
+
+        <div class="card-body">
+            <form class="form" action="">
+                <div class="form-input">
+                    <label for="tutorial-3-input-1">1st Number:</label>
+                    <input type="number" id="tutorial-3-input-1">
+                </div>
+    
+                <div class="form-input">
+                    <label for="tutorial-3-input-2">2nd Number:</label>
+                    <input type="number" id="tutorial-3-input-2">
+                </div>
+
+                <button type="button" id="tutorial-3-calculate" onclick="compute()">Calculate</button>
+            </form>
+
+            <hr>
+    
+            <label for="">Result:</label>
+            <p id="tutorial-3-result" class="result">0</p>
+        </div>
+    </div>
+
+    <div id="tutorial-4" class="tutorial card">
+        <div class="card-title">
+            <h3>4. Write a JavaScript program to check two given numbers and return true if one of the number is 50 or if their sum is 50.</h3>
+        </div>
+
+        <div class="card-body">
+            <form class="form" action="">
+                <div class="form-input">
+                    <label for="tutorial-4-input-1">1st Number:</label>
+                    <input type="number" id="tutorial-4-input-1">
+                </div>
+    
+                <div class="form-input">
+                    <label for="tutorial-4-input-2">2nd Number:</label>
+                    <input type="number" id="tutorial-4-input-2">
+                </div>
+
+                <button type="button" onclick="verifyNumbers()">Verify</button>
+            </form>
+
+            <hr>
+    
+            <label for="">Result:</label>
+            <p id="tutorial-4-result" class="result">TRUE / FALSE</p>
+        </div>
+    </div>
+
+    <div id="tutorial-5" class="tutorial card">
+        <div class="card-title">
+            <h3>5. Write a JavaScript program to check whether a given integer is within 20 of 100 or 400.</h3>
+        </div>
+
+        <div class="card-body">
+            <form class="form" action="">
+                <div class="form-input">
+                    <label for="tutorial-5-input-1">1st Number:</label>
+                    <input type="number" id="tutorial-5-input-1">
+                </div>
+                <button type="button" onclick="verifyNumber()">Verify</button>
+            </form>
+
+            <hr>
+    
+            <label for="">Result:</label>
+            <p id="tutorial-5-result" class="result">TRUE / FALSE</p>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
