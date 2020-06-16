@@ -32,3 +32,29 @@ function divide() {
 
     document.getElementById("tutorial-2-result").innerHTML = x / y;
 }
+
+function compute() {
+    var x = document.getElementById("tutorial-2-input-1").value;
+    var y = document.getElementById("tutorial-2-input-2").value;
+
+    x = parseInt(x); // Convert string to integer
+    y = parseInt(y);
+
+    // Solution 1
+    var result = 0;
+    if (x == y) {
+        result = (x + y) * 3;
+    } else {
+        result = x + y;
+    }
+    
+    document.getElementById("tutorial-2-result").innerHTML = result;
+
+    // Solution 2
+    if (x == y) {
+        document.getElementById("tutorial-2-result").innerHTML = (x + y) * 3;
+        return;
+    }
+
+    document.getElementById("tutorial-2-result").innerHTML = x + y;
+}

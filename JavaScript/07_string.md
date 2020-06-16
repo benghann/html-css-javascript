@@ -1,5 +1,5 @@
-
 # Strings
+
 ## Description
 - It's like a text
 `var x = "John Doe";`
