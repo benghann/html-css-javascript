@@ -3,10 +3,10 @@
 ## || (OR)
 
 ``` JavaScript
-alert( true || true );   
-alert( false || true );  
-alert( true || false );  
-alert( false || false ); 
+alert( true || true );   // true
+alert( false || true );  // true
+alert( true || false );  // true
+alert( false || false ); // false
 ```
 
 ``` JavaScript
@@ -19,7 +19,7 @@ if (1 || 0) { // works just like if( true || false )
 let hour = 12;
 let isWeekend = true;
 
-if (hour < 10 || hour > 18 || isWeekend) {
+if (hour < 10 || hour > 18 || isWeekend) { // ( false || false || true)
   alert( 'The office is closed.' ); // it is the weekend
 }
 ```
@@ -34,12 +34,12 @@ The OR || operator does the following:
 
 ### Quiz
 ``` JavaScript
-alert( 1 || 0 ); 
+alert( 1 || 0 );  // 1
 
-alert( null || 1 );
-alert( null || 0 || 1 );
+alert( null || 1 ); // 1
+alert( null || 0 || 1 ); // 1
 
-alert( undefined || null || 0 );
+alert( undefined || null || 0 ); // 0
 ```
 
 ``` JavaScript
@@ -47,17 +47,17 @@ let firstName = "";
 let lastName = "";
 let nickName = "SuperCoder";
 
-alert( firstName || lastName || nickName || "Anonymous");
+alert( firstName || lastName || nickName || "Anonymous");  // SuperCoder
 ```
 
 ## && (AND)
 `result = a && b;`
 
 ``` JavaScript
-alert( true && true );  
-alert( false && true ); 
-alert( true && false ); 
-alert( false && false );
+alert( true && true );   // true
+alert( false && true );  // false
+alert( true && false );  // false
+alert( false && false ); // false
 ```
 
 ``` JavaScript
@@ -69,9 +69,14 @@ if (1 && 0) { // evaluated as true && false
 ``` JavaScript
 let hour = 12;
 let minute = 30;
+let isSaturday = false;
 
 if (hour == 12 && minute == 30) {
   alert( 'The time is 12:30' );
+}
+
+if (hour == 12 && minute == 00 && isSaturday) {
+  alert( 'Now is 12PM on Saturday' );
 }
 ```
 
@@ -86,18 +91,18 @@ The AND && operator does the following:
 ``` JavaScript
 // if the first operand is truthy,
 // AND returns the second operand:
-alert( 1 && 0 );
-alert( 1 && 5 );
+alert( 1 && 0 ); // 0
+alert( 1 && 5 ); // 5
 
 // if the first operand is falsy,
 // AND returns it. The second operand is ignored
-alert( null && 5 );
-alert( 0 && "no matter what" );
+alert( null && 5 ); // null
+alert( 0 && "no matter what" ); // 0
 ```
 
 ``` JavaScript
-alert( 1 && 2 && null && 3 );
-alert( 1 && 2 && 3 );
+alert( 1 && 2 && null && 3 ); // null
+alert( 1 && 2 && 3 ); // 3
 ```
 
 > Precedence of AND && is higher than OR ||
@@ -108,12 +113,12 @@ alert( 1 && 2 && 3 );
 - Returns the inverse value.
 
 ``` JavaScript
-alert( !true );
-alert( !0 );
+alert( !true ); // false
+alert( !0 ); // true
 
-alert( !!"non-empty string" );
-alert( !!null );
+alert( !(!("non-empty string")) ); // true
+alert( !!null ); // false
 
-alert( Boolean("non-empty string") );
-alert( Boolean(null) );
+alert( Boolean("non-empty string") ); // true
+alert( Boolean(null) ); // false
 ```
