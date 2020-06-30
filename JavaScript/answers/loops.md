@@ -25,6 +25,18 @@
      - Let’s stop on i = 4. The prefix form ++i would increment it and use 5 in the comparison. But here we have the postfix form i++. So it increments i to 5, but returns the old value. Hence the comparison is actually while(4 < 5) – true, and the control goes on to alert.
 
      - The value i = 5 is the last one, because on the next step while(5 < 5) is false.
+
+     - ``` JavaScript
+        let i = 0;
+        while (++i < 5) { // i = 1, i = 2, i = 3, i = 4
+            alert( i );
+        }
+
+        let i = 0;
+        while (i++ < 5) { // i = 0, i = 1, i = 2, i = 3, i = 4
+            alert( i ); // 1, 2, 3, 4, 5
+        }
+        ```
     
 3. Which values get shown by the "for" loop?
    - The answer: from 0 to 4 in both cases.
@@ -45,9 +57,9 @@
 4. Output even numbers in the loop
    - ``` JavaScript
        for (let i = 2; i <= 10; i++) {
-       if (i % 2 == 0) {
-           alert( i );
-       }
+        if (i % 2 == 1) {
+            alert( i );
+        }
        }
        ```
    - We use the “modulo” operator % to get the remainder and check for the evenness here.
@@ -56,8 +68,8 @@
     ``` JavaScript
     let i = 0;
     while (i < 3) {
-    alert( `number ${i}!` );
-    i++;
+        alert( `number ${i}!` );
+        i++;
     }
     ```
 
@@ -66,7 +78,7 @@
     let num;
 
     do {
-    num = prompt("Enter a number greater than 100?", 0);
+        num = prompt("Enter a number greater than 100?", 0);
     } while (num <= 100 && num);
     ```
     - The loop do..while repeats while both checks are truthy:
@@ -88,12 +100,36 @@
 
     nextPrime:
     for (let i = 2; i <= n; i++) { // for each i...
+        
+        for (let j = 2; j < i; j++) { // look for a divisor..
+            if (i % j == 0) continue nextPrime; // not a prime, go next i
+        }
 
-    for (let j = 2; j < i; j++) { // look for a divisor..
-        if (i % j == 0) continue nextPrime; // not a prime, go next i
-    }
-
-    alert( i ); // a prime
+        alert( i ); // a prime
     }
     ```
     - There’s a lot of space to optimize it. For instance, we could look for the divisors from 2 to square root of i. But anyway, if we want to be really efficient for large intervals, we need to change the approach and rely on advanced maths and complex algorithms like Quadratic sieve, General number field sieve etc.
+
+
+    - ``` JavaScript
+        function getPrimeNumber(n) {
+            for (let i = 2; i <= n; i++ ) { 
+                let isPrimeNumber = true;
+                for (let j = 2;  j < i; j++)  { 
+                    if (i % j == 0)  { // means not prime number
+                        isPrimeNumber = false;
+                        break;
+                    }
+                }
+
+                if (isPrimeNumber) {
+                    console.log(i);
+                }
+            }
+        }
+
+        // n = 10
+        // i = 2, i <= 10 => true; j = 2, j < 2 => false;
+        // i = 3, i <= 10 => true; j = 2, j < 3 => true, i % j == 0 => false, won't run `isPrimeNumber = false;`; j = 3, j < 3 => false;
+        // i = 4, i <= 10 => true; j = 2, j < 4 = > true, i % j == 0 => true, run `isPrimeNumber = false;`, break;
+    ```

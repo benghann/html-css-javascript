@@ -4,7 +4,7 @@
 ## Syntax
 ``` JavaScript
 switch(x) {
-  case 'value1':  // if (x === 'value1')
+  case 'value1':  // if (x === 'value1') == ===
     ...
     [break]
 
@@ -23,9 +23,9 @@ switch(x) {
 
 ## Example
 ``` JavaScript
-let a = 2 + 2;
+let x = 2 + 2;
 
-switch (a) {
+switch (x) {
   case 3:
     alert( 'Too small' );
     break;
@@ -42,9 +42,9 @@ switch (a) {
 
 > If there is no break then the execution continues with the next case without any checks.
 ``` JavaScript
-let a = 2 + 2;
+let x = 2 + 2;
 
-switch (a) {
+switch (x) {
   case 3:
     alert( 'Too small' );
   case 4:
@@ -58,9 +58,10 @@ switch (a) {
 
 ## Grouping of "case"
 ``` JavaScript
-let a = 3;
+let x = 2 + 2;
+let y = 3;
 
-switch (a) {
+switch (y) {
   case 4:
     alert('Right!');
     break;

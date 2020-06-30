@@ -1,11 +1,11 @@
 # Conditional Operators
 
 Write output for:
-1. alert( null || 2 || undefined );
-2. alert( alert(1) || 2 || alert(3) );
-3. alert( 1 && null && 2 );
-4. alert( alert(1) && alert(2) );
-5. alert( null || 2 && 3 || 4 );
+1. alert( null || 2 || undefined ); // alert(2)
+2. alert( alert(1) || 2 || alert(3) ); // alert(1), alert(2)
+3. alert( 1 && null && 2 ); // alert(null)
+4. alert( alert(1) && alert(2) ); // alert(1)
+5. alert( null || 2 && 3 || 4 ); // alert(null || (2 && 3) || 4) => alert (3)
 
 6. Check the range between
 > Write an “if” condition to check that age is between 14 and 90 inclusively.

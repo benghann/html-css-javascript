@@ -6,24 +6,24 @@
     Otherwise it asks for a confirmation and returns its result:
     ``` JavaScript
     function checkAge(age) {
-    if (age > 18) {
-        return true;
-    } else {
-        // ...
-        return confirm('Did parents allow you?');
+        if (age > 18) {
+            return "You are an adult"; // continue => for loop, break => for, while loop, return => return value & exit function
+        } 
+        return "You are too young to enter";
     }
-    }
+
+    checkAge(20) // alert(checkAge(20)) => alert("You are an adult")
     ```
 
     Will the function work differently if else is removed?
 
     ``` JavaScript
     function checkAge(age) {
-    if (age > 18) {
-        return true;
-    }
-    // ...
-    return confirm('Did parents allow you?');
+        if (age > 18) {
+            return "You are an adult";
+        }
+        // ...
+        return "You are too young to enter";
     }
     ```
 
@@ -36,11 +36,11 @@
 
     ``` JavaScript
     function checkAge(age) {
-    if (age > 18) {
-        return true;
-    } else {
-        return confirm('Did parents allow you?');
-    }
+        if (age > 18) {
+            return "You are an adult";
+        } else {
+            return "You are too young to enter";
+        }
     }
     ```
 
@@ -50,6 +50,24 @@
 
     1. Using a question mark operator ?
     2. Using OR ||
+
+    ``` JavaScript
+    function checkAge(age) {
+       return (age > 18 ? "You are an adult" : "You are too young to enter");
+    }
+
+    function checkAge(age) {
+        if (age > 18) {
+            return true;
+        } else {
+            return "You are too young to enter";
+        }
+    }
+
+    function checkAge(age) {
+       return age > 18 || "You are too young to enter"; // true || "You are too young to enter" or false || "You are too young to enter"
+    }
+    ```
 
 3. Function min(a, b)
     Write a function min(a,b) which returns the least of two numbers a and b.

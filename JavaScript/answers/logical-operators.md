@@ -5,7 +5,7 @@
 4. 1, then `undefined`
 5. 3
 6. `if (age >= 14 && age <= 90)`
-7. `if (!(age >= 14 && age <= 90))`
+7. `if (!(age >= 14 && age <= 90))` or `if (age < 14 || age > 90))`
 
 8. 
 ``` JavaScript
