@@ -133,7 +133,7 @@ for (;;) {
 
 
 ### Breaking the loops
-
+- force the exit at any time
 ``` JavaScript
 let sum = 0;
 
@@ -159,6 +159,19 @@ while (true) {
   }
 }
 ```
+
+### Continue to the next iteration
+- stops the current iteration and forces the loop to start a new one
+``` JavaScript
+for (let i = 0; i < 10; i++) {
+
+  // if true, skip the remaining part of the body
+  if (i % 2 == 0) continue;
+
+  alert(i); // 1, then 3, 5, 7, 9
+}
+```
+
 
 ## Class Examples:
 ``` JavaScript
