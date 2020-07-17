@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-dark">
+    <nav id="nav-bar" class="navbar navbar-dark">
         <div class="container">
             <a href="#" class="navbar-brand">
                 <img src="./images/logo.png" alt="">
@@ -23,19 +23,25 @@
     
             <ul class="nav">
                 <li class="nav-item active">
-                    <a class="nav-link comic-sans" href="#">Home</a>
+                    <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="#about-me">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#latest-works">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-me">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <section id="home-banner">
+    <section id="home">
         <div class="container">
             <div class="row">
                 <div class="col-5 d-flex align-items-center">
@@ -84,7 +90,7 @@
                 <p class="section-desc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natur</p>
             </div>
 
-            <div class="row">
+            <div id="services-list" class="row">
                 <div class="col-12 col-md-6">
                     <div class="card">
                         <h4>UX Research</h4>
@@ -320,5 +326,8 @@
             Copyright &copy; 2018 <a href="">DroitThemes</a>
         </div>
     </footer>
+
+    <script src="./vendors/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

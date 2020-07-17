@@ -84,22 +84,22 @@ body > section {
     font-weight: 500;
 }
 
-/* Home Banner */
-#home-banner {
+/* Home */
+#home {
     padding: 0px;
 }
 
-#home-banner img {
+#home img {
     margin-top: 100px;
     width: 100%;
 }
 
-#home-banner h1 {
+#home h1 {
     font-size: 64px;
     font-weight: 600;
 }
 
-#home-banner p {
+#home p {
     font-size: 24px;
 }
 
