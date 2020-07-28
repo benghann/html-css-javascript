@@ -11,3 +11,34 @@
 ## offset()
 - return offset of an element (object)
 - eg. `$(this).offset()`
+
+## parents()
+- return all parents of an element (array)
+- eg. `$(this).parents()`
+- to retrieve particular parents put it in parameter
+- eg. `$(this).parents('.nav-item')`
+
+## parent()
+- return the first parent of an element (array)
+- eg. `$(this).parent()`
+
+## addClass()
+- add classname given to an element
+- eg. `$(this).addClass(className)`
+
+## removeClass()
+- remove classname given from an element
+- eg. `$(this).removeClass(className)`
+
+## outerHeight()
+- retrieve outer height of an element
+- eg. `$(this).outerHeight()`
+
+## each()
+- iterate (loop) all the elements selected
+- eg. `$('div').each(func)`
+
+## Math functions
+- Math.floor(368.75) // 368
+- Math.round(368.75) // 369
+- Math.ceil(368.75) // 369
