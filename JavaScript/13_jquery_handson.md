@@ -42,3 +42,7 @@
 - Math.floor(368.75) // 368
 - Math.round(368.75) // 369
 - Math.ceil(368.75) // 369
+
+## off(event)
+- unbind / remove the event handle stated
+- eg. `$('div').off('click')`
