@@ -23,3 +23,9 @@ Next Lesson (JavaScript):
 - Click text to copy
 - Animation
 
+
+GitHub
+- Open Source 
+- Give suggestions
+- Improve library
+- Push to GitHub

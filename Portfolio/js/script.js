@@ -5,10 +5,8 @@
 // 5. Debug
 
 $(document).ready(function() {
-    $("#nav-bar .nav-link").click(function(event) {
+    $('a[href^="#"]').click(function() {
         event.preventDefault();
-
-        console.log('Clicked nav link');
 
         const sectionID = $(this).attr("href"); // #about-me
         const sectionOffsetTop = $(sectionID).offset().top;
@@ -26,7 +24,7 @@ $(document).ready(function() {
         $(window).on('scroll', function() {
             setActiveLink();
         });
-    });
+    })
 
     setActiveLink();
     $(window).on('scroll', function() {
@@ -75,4 +73,33 @@ $(document).ready(function() {
             }
         });
     }
+
+
+    const grid = $('#latest-works .works-list').isotope({
+        // options...
+        itemSelector: '#latest-works .work-card',
+        layoutMode: 'fitRows',
+        percentPosition: true,
+        horizontalOrder: true,
+        masonry: {
+            columnWidth: '#latest-works .work-card-sizer'
+        },
+    });
+
+    $('#works-filtering .nav-link').click(function(event) {
+        event.preventDefault();
+
+        $('#works-filtering .nav-link').removeClass('active');
+        $(this).addClass('active');
+
+        const filtering = $(this).attr("data-filter");
+        console.log(filtering);
+
+        grid.isotope({
+            filter: filtering,
+        })
+    })
+
+
+      
 })

@@ -143,15 +143,31 @@ body > section {
     padding: 30px;
     border-left-width: 1px;
     margin-bottom: 15px;
+    transition: all .2s ease;
 }
 
 #work-experiences .card h4 {
     color: #fff;
     font-weight: 600;
+    transition: all .2s ease;
 }
 
 #work-experiences .card p {
     margin-top: 15px;
+    transition: all .2s ease;
+}
+
+#work-experiences .card:hover {
+    background-color: #fab634;
+    color: #000;
+}
+
+#work-experiences .card:hover h4 {
+    color: #000;
+}
+
+#work-experiences .card:hover p {
+    color: #000;
 }
 
 #work-experiences .row > div {
@@ -233,12 +249,24 @@ body > section {
 
 #latest-works img {
     width: 100%;
+    height: 100%;
 }
 
 #latest-works .work-card {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     position: relative;
     overflow: hidden;
+    float: left;
+}
+
+#latest-works .work-card, 
+#latest-works .work-card-sizer {
+    width: 200px;
+}
+
+#latest-works .work-card.w-md-50 {
+    width: 400px;
+    height: auto;
 }
 
 #latest-works .work-card .hover-content {
